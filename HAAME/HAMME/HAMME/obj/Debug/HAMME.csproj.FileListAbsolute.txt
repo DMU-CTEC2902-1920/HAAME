@@ -1,0 +1,10 @@
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\bin\Debug\HAMME.exe.config
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\bin\Debug\HAMME.exe
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\bin\Debug\HAMME.pdb
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\obj\Debug\HAMME.csprojAssemblyReference.cache
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\obj\Debug\HAMME.Form1.resources
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\obj\Debug\HAMME.Properties.Resources.resources
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\obj\Debug\HAMME.csproj.GenerateResource.cache
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\obj\Debug\HAMME.csproj.CoreCompileInputs.cache
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\obj\Debug\HAMME.exe
+H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\obj\Debug\HAMME.pdb
