@@ -10,7 +10,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("HAMME")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright ©  2020 - Devloped by Mohamed Outeh" +
+    "Designed by Edward Tafi")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
