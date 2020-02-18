@@ -188,6 +188,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\cartoon-controller-png.png" />
     <Content Include="Images\fifa20.jpg" />
     <Content Include="Images\NBA_2K20_cover.png" />
     <Content Include="Images\trophy.png" />
