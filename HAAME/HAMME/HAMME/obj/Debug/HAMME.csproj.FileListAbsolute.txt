@@ -18,3 +18,12 @@ H:\Documents\Year 2\Advanced Programming CTEC2902\MVC Project\HAAME\HAMME\HAMME\
 \\vfiler1.lec-admin.dmu.ac.uk\Home5\P2436635\Documents\Computing\Year 2\New folder\HAAME\HAMME\HAMME\obj\Debug\HAMME.csproj.CoreCompileInputs.cache
 \\vfiler1.lec-admin.dmu.ac.uk\Home5\P2436635\Documents\Computing\Year 2\New folder\HAAME\HAMME\HAMME\obj\Debug\HAMME.exe
 \\vfiler1.lec-admin.dmu.ac.uk\Home5\P2436635\Documents\Computing\Year 2\New folder\HAAME\HAMME\HAMME\obj\Debug\HAMME.pdb
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\bin\Debug\HAMME.exe.config
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\bin\Debug\HAMME.exe
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\bin\Debug\HAMME.pdb
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\obj\Debug\HAMME.Form1.resources
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\obj\Debug\HAMME.Properties.Resources.resources
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\obj\Debug\HAMME.csproj.GenerateResource.cache
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\obj\Debug\HAMME.csproj.CoreCompileInputs.cache
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\obj\Debug\HAMME.exe
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\Assignment 2\HAAME\HAMME\HAMME\obj\Debug\HAMME.pdb
