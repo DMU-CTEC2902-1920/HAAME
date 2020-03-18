@@ -5,6 +5,7 @@ using System.Web;
 
 namespace HAAMEGameReview.Models
 {
+    //get and set for properties
     public class Game
     {
         public virtual int GameID { get; set; }
