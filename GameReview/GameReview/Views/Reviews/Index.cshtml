@@ -1,0 +1,83 @@
+﻿@model IEnumerable<GameReview.Models.Reviews>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ReviewTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameGenre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReviewAuthour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ratings)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GameId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GameTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GameGenre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Review)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewAuthour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ratings)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ReviewsId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ReviewsId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ReviewsId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

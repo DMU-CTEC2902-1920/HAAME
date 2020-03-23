@@ -1,0 +1,90 @@
+﻿@model GameReview.Models.Reviews
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Reviews</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ReviewTitle)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ReviewTitle)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.GameId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.GameId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.GameTitle)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.GameTitle)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.GameGenre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.GameGenre)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Review)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Review)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ReviewAuthour)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ReviewAuthour)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Ratings)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Ratings)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewsId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
