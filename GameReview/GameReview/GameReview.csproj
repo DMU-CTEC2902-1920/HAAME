@@ -196,8 +196,11 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\cartoon-controller-png.png" />
+    <Content Include="Images\cod.jpg" />
     <Content Include="Images\fifa20.jpg" />
+    <Content Include="Images\gta.jpg" />
     <Content Include="Images\NBA_2K20_cover.png" />
+    <Content Include="Images\rocket.jpg" />
     <Content Include="Images\trophy.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
