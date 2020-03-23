@@ -1,0 +1,103 @@
+﻿@model GameReview.Models.Game
+
+@{
+    ViewBag.Title = "HAMME Game Review";
+}
+
+<div class="jumbotron">
+    <h1>HAAME Game Review</h1>
+    <p class="lead">The worlds leading website in all things game related</p>
+
+</div>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Game</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.GameTitle)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GameTitle)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Console)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Console)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GameGenre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GameGenre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Developer)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Developer)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Ratings)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Ratings)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ReleaseDate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

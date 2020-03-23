@@ -1,0 +1,90 @@
+﻿@model IEnumerable<GameReview.Models.Game>
+
+@{
+    ViewBag.Title = "HAMME Game Review";
+}
+
+<div class="jumbotron">
+    <h1>HAAME Game Review</h1>
+    <p class="lead">The worlds leading website in all things game related</p>
+    <img src="~/Images/cartoon-controller-png.png" height="250" width="200" />
+</div>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My Reviews</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GameTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Console)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GameGenre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Developer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ratings)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GameTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Console)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GameGenre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Developer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ratings)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReleaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.GameID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.GameID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.GameID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
