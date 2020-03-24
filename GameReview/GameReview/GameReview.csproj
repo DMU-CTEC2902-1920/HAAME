@@ -203,11 +203,13 @@
     <Content Include="Images\gta.jpg" />
     <Content Include="Images\halo.jpg" />
     <Content Include="Images\last.png" />
+    <Content Include="Images\madden.jpg" />
     <Content Include="Images\marvel.png" />
     <Content Include="Images\NBA_2K20_cover.png" />
     <Content Include="Images\resident.jpg" />
     <Content Include="Images\rocket.jpg" />
     <Content Include="Images\trophy.png" />
+    <Content Include="Images\ufc.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -362,6 +364,7 @@
     <Content Include="Views\Games\Details.cshtml" />
     <Content Include="Views\Games\Edit.cshtml" />
     <Content Include="Views\Games\Index.cshtml" />
+    <Content Include="Views\Home\Genre.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
