@@ -1,8 +1,13 @@
 ﻿@model IEnumerable<GameReview.Models.Reviews>
 
 @{
-    Layout = null;
+    ViewBag.Title = "HAMME Game Review";
 }
+
+<div>
+    <h1>Game Reviews</h1>
+    <p class="lead">Take a look at some of our top tier reviews!</p>
+</div>
 
 <!DOCTYPE html>
 
@@ -12,6 +17,14 @@
     <title>Index</title>
 </head>
 <body>
+
+    @*<label for="ReviewTitle">Select a Review: </label>
+
+    <select id="ReviewTitle">
+        <option value="COD: Modern Warfare">COD: Modern Warfare</option>
+        <option value="Fifa 20">Fifa 20</option>
+    </select> https://www.quora.com/How-do-I-create-a-hyperlink-in-a-drop-down-list-in-HTML create a drop down list and use week 21 to transport you to a genre specific page*@
+
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
@@ -43,41 +56,42 @@
             </th>
             <th></th>
         </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReviewTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GameId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GameTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GameGenre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Review)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReviewAuthour)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ratings)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.ReviewsId }) |
-                @Html.ActionLink("Details", "Details", new { id=item.ReviewsId }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.ReviewsId })
-            </td>
-        </tr>
-    }
-    
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReviewTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GameId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GameTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GameGenre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Review)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReviewAuthour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ratings)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ReviewsId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ReviewsId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ReviewsId })
+                </td>
+            </tr>
+        }
+
     </table>
 </body>
 </html>
