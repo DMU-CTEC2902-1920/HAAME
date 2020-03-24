@@ -197,9 +197,15 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\cartoon-controller-png.png" />
     <Content Include="Images\cod.jpg" />
+    <Content Include="Images\coming.jpg" />
     <Content Include="Images\fifa20.jpg" />
+    <Content Include="Images\final.jpg" />
     <Content Include="Images\gta.jpg" />
+    <Content Include="Images\halo.jpg" />
+    <Content Include="Images\last.png" />
+    <Content Include="Images\marvel.png" />
     <Content Include="Images\NBA_2K20_cover.png" />
+    <Content Include="Images\resident.jpg" />
     <Content Include="Images\rocket.jpg" />
     <Content Include="Images\trophy.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
