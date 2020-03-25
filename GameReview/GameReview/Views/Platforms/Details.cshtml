@@ -1,0 +1,74 @@
+﻿@model GameReview.Models.Platforms
+
+@{
+    ViewBag.Title = "HAMME Games";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Platform Details</title>
+</head>
+<body>
+    <div>
+        <h4>Platforms</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.PlatformName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PlatformName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Developer)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Developer)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.RAM)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RAM)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GPUCore)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GPUCore)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.HDD)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.HDD)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.PlatformId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

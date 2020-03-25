@@ -15,6 +15,8 @@ namespace GameReview
         protected void Application_Start()
         {
             Database.SetInitializer(new GameDataInitialiser());
+            Database.SetInitializer(new ReviewsDataInitialiser());
+            Database.SetInitializer(new PlatformsDataInitialiser());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -1,0 +1,93 @@
+﻿@model GameReview.Models.Platforms
+
+@{
+    ViewBag.Title = "HAMME Games";
+}
+
+<div>
+    <h1>Add a Platform</h1>
+    <p class="lead">Why not keep us updated with the latest platforms/consoles, mainstream or not let uss know the deets!</p>
+</div>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add below</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Platforms</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.PlatformName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PlatformName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PlatformName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Developer, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Developer, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Developer, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.RAM, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.RAM, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.RAM, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GPUCore, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.GPUCore, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GPUCore, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HDD, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.HDD, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.HDD, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>

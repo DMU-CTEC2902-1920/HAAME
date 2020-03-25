@@ -1,0 +1,84 @@
+﻿@model GameReview.Models.Platforms
+
+@{
+    ViewBag.Title = "HAMME Games";
+}
+
+<div>
+    <h1>Delete a Platform</h1>
+</div>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete a Platform</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete the following platform?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.PlatformName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PlatformName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Developer)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Developer)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.RAM)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RAM)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GPUCore)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GPUCore)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.HDD)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.HDD)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿@model IEnumerable<GameReview.Models.Platforms>
+
+@{
+    ViewBag.Title = "HAMME Games";
+}
+
+<div>
+    <h1>Platforms</h1>
+    <p class="lead">Whether its PlayStation, Xbox or PC... there's games for all</p>
+</div>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlatformName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Developer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RAM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GPUCore)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HDD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlatformName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Developer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RAM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GPUCore)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HDD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PlatformId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PlatformId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PlatformId })
+            </td>
+        </tr>
+        }
+
+    </table>
+</body>
+</html>
