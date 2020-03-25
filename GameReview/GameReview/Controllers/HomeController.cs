@@ -37,5 +37,10 @@ namespace GameReview.Controllers
         {
             return View();
         }
+
+        public ActionResult ComingSoon()
+        {
+            return View();
+        }
     }
 }
