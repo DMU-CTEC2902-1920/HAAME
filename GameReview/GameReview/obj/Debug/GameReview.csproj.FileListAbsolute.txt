@@ -418,3 +418,5 @@ C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\HAAME\HAAME 3
 C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\HAAME\HAAME 3\GameReview\GameReview\obj\Debug\GameReview.csproj.CopyComplete
 C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\HAAME\HAAME 3\GameReview\GameReview\obj\Debug\GameReview.dll
 C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\HAAME\HAAME 3\GameReview\GameReview\obj\Debug\GameReview.pdb
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\HAAME\HAAME 3\GameReview\GameReview\obj\Debug\GameReview.Migrations.InitialCreate.resources
+C:\Users\outeh\Documents\Uni Work\Second Year\Advanced Programming\HAAME\HAAME 3\GameReview\GameReview\obj\Debug\GameReview.csproj.GenerateResource.cache
