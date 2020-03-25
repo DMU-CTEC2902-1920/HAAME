@@ -173,6 +173,7 @@
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PlatformsController.cs" />
     <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -183,6 +184,9 @@
     <Compile Include="Models\GameDataInitialiser.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Platforms.cs" />
+    <Compile Include="Models\PlatformsContext.cs" />
+    <Compile Include="Models\PlatformsDataInitialiser.cs" />
     <Compile Include="Models\Reviews.cs" />
     <Compile Include="Models\ReviewsContext.cs" />
     <Compile Include="Models\ReviewsDataInitialiser.cs" />
@@ -362,6 +366,11 @@
     <Content Include="Views\Reviews\Details.cshtml" />
     <Content Include="Views\Reviews\Edit.cshtml" />
     <Content Include="Views\Reviews\Index.cshtml" />
+    <Content Include="Views\Platforms\Create.cshtml" />
+    <Content Include="Views\Platforms\Delete.cshtml" />
+    <Content Include="Views\Platforms\Details.cshtml" />
+    <Content Include="Views\Platforms\Edit.cshtml" />
+    <Content Include="Views\Platforms\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

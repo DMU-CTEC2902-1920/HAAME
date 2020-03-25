@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+//I'm usin the data annotations library to set strict rules for my class attributes
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
