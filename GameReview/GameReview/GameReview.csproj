@@ -391,6 +391,7 @@
     <Content Include="Views\Games\Index.cshtml" />
     <Content Include="Views\Home\Genre.cshtml" />
     <Content Include="Views\Home\Terms.cshtml" />
+    <Content Include="Views\Home\ComingSoon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -81,7 +81,6 @@
                 </td>
             </tr>
         </table>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">See New Releases &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Games of the Month</h2>
@@ -131,13 +130,12 @@
                 </td>
             </tr>
         </table>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Trending Games &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Coming Soon</h2>
         <p>Do you love games? Why not check out the games that will be coming out soon.</p>
         <img src="~/Images/coming.jpg" class="img-fluid" alt="Coming Soon" />
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <p>@Html.ActionLink("Coming Soon Page", "ComingSoon", "Home")</p>
     </div>
     <br /><br /><br />
     <br />
@@ -152,7 +150,7 @@
         <p>Here you would find the terms and condition of our website. Please abide by these rule or there will be reprocussions.
         Thank you for visiting our site.</p>
         <img src="~/Images/trophy.png" height="200" width="200" />
-        <a href="http://localhost:6046/Home/Terms">Learn more &raquo;</a>
+        <a @Html.ActionLink("T&C Page", "Terms", "Home")></a>
     </div>
 
 </div>
