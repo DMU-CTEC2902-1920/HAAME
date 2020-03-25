@@ -33,6 +33,9 @@ namespace GameReview.Controllers
             return View();
         }
 
-
+        public ActionResult Terms()
+        {
+            return View();
+        }
     }
 }
