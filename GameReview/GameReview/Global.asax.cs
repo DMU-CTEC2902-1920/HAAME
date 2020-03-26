@@ -14,6 +14,7 @@ namespace GameReview
     {
         protected void Application_Start()
         {
+            Database.SetInitializer(new DeveloperDataInitialiser());
             Database.SetInitializer(new GameDataInitialiser());
             Database.SetInitializer(new ReviewsDataInitialiser());
             Database.SetInitializer(new PlatformsDataInitialiser());
