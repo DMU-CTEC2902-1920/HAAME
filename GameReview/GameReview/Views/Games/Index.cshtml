@@ -3,6 +3,19 @@
 @{
     ViewBag.Title = "HAMME Game Review";
 }
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+</style>
 
 <div class="jumbotron">
     <h1>HAAME Game Review</h1>
@@ -19,9 +32,9 @@
 </head>
 <body>
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @*@Html.ActionLink("Create New", "Create")*@
     </p>
-    <table class="table">
+    <table>
         <tr>
             <th>
                 Game Name
@@ -44,9 +57,9 @@
             <th>
                 Release Date
             </th>
-            <th>
-                Review
-            </th>
+            @*<th>
+                Description
+            </th>*@
             <th></th>
         </tr>
 
@@ -74,13 +87,14 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.ReleaseDate)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.Description)
-                </td>
+                </td>*@
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.GameID }) |
+                    @*@Html.ActionLink("Edit", "Edit", new { id = item.GameID }) |*@
                     @Html.ActionLink("Details", "Details", new { id = item.GameID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.GameID })
+                    @*@Html.ActionLink("Delete", "Delete", new { id = item.GameID })*@
+                    @Html.ActionLink("Create a Review", "Details", new { id = item.GameID })
                 </td>
             </tr>
         }

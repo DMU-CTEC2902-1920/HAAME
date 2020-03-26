@@ -1,0 +1,66 @@
+﻿@model IEnumerable<GameReview.Models.Developer>
+
+@{
+    ViewBag.Title = "HAMME Game Review";
+}
+
+<div class="jumbotron">
+    <h1>HAAME Game Review</h1>
+    <p class="lead">The worlds leading website in all things game related</p>
+    <img src="~/Images/cartoon-controller-png.png" height="200" width="200" />
+</div>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Developers</title>
+</head>
+<body>
+    <p>
+        @*@Html.ActionLink("Create New", "Create")*@
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                Developer
+            </th>
+            <th>
+                Date Founded
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                Games Produced
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DeveloperName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GamesProduced)
+                </td>
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { id=item.DeveloperID }) |*@
+                    @Html.ActionLink("Details", "Details", new { id = item.DeveloperID }) 
+                    @*@Html.ActionLink("Delete", "Delete", new { id=item.DeveloperID })*@
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
