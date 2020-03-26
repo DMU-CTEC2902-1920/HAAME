@@ -170,13 +170,22 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DevelopersController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003251642496_InitialCreate.cs" />
+    <Compile Include="Migrations\202003251642496_InitialCreate.Designer.cs">
+      <DependentUpon>202003251642496_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Developer.cs" />
+    <Compile Include="Models\DeveloperContext.cs" />
+    <Compile Include="Models\DeveloperDataInitialiser.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\GameContext.cs" />
     <Compile Include="Models\GameDataInitialiser.cs" />
@@ -192,13 +201,48 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.min12.css" />
+    <Content Include="Content\bootstrap11.css" />
+    <Content Include="Content\bootstrap11.min.css" />
+    <Content Include="Content\bootstrap12.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\bus.jpg" />
     <Content Include="Images\cartoon-controller-png.png" />
+    <Content Include="Images\city.jpg" />
+    <Content Include="Images\cod.jpg" />
+    <Content Include="Images\coming.jpg" />
+    <Content Include="Images\control.jpg" />
+    <Content Include="Images\div.jpg" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\farm.jpg" />
     <Content Include="Images\fifa20.jpg" />
+    <Content Include="Images\final.jpg" />
+    <Content Include="Images\finalfantasy.jpg" />
+    <Content Include="Images\gta.jpg" />
+    <Content Include="Images\halo.jpg" />
+    <Content Include="Images\last.jpg" />
+    <Content Include="Images\last.png" />
+    <Content Include="Images\legend.png" />
+    <Content Include="Images\limbo.jpg" />
+    <Content Include="Images\link.jpg" />
+    <Content Include="Images\luigi.jpg" />
+    <Content Include="Images\madden.jpg" />
+    <Content Include="Images\marvel.png" />
     <Content Include="Images\NBA_2K20_cover.png" />
+    <Content Include="Images\resident.jpg" />
+    <Content Include="Images\rocket.jpg" />
+    <Content Include="Images\sims.jpg" />
+    <Content Include="Images\south.jpg" />
+    <Content Include="Images\star.jpg" />
+    <Content Include="Images\tetris.jpg" />
+    <Content Include="Images\train.jpg" />
     <Content Include="Images\trophy.png" />
+    <Content Include="Images\ufc.jpg" />
+    <Content Include="Images\Unravel.jpg" />
+    <Content Include="Images\witch.jpg" />
+    <Content Include="Images\witness.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -353,6 +397,14 @@
     <Content Include="Views\Games\Details.cshtml" />
     <Content Include="Views\Games\Edit.cshtml" />
     <Content Include="Views\Games\Index.cshtml" />
+    <Content Include="Views\Home\Genre.cshtml" />
+    <Content Include="Views\Home\Terms.cshtml" />
+    <Content Include="Views\Home\ComingSoon.cshtml" />
+    <Content Include="Views\Developers\Create.cshtml" />
+    <Content Include="Views\Developers\Delete.cshtml" />
+    <Content Include="Views\Developers\Details.cshtml" />
+    <Content Include="Views\Developers\Edit.cshtml" />
+    <Content Include="Views\Developers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -367,6 +419,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202003251642496_InitialCreate.resx">
+      <DependentUpon>202003251642496_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

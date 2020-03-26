@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using GameReview.Models;
 
+
 namespace GameReview.Models
 {
     public class GameContext : DbContext

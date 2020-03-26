@@ -1,0 +1,632 @@
+﻿@{
+    ViewBag.Title = "HAAME Games Review";
+}
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 250%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+</style>
+
+<div class="jumbotron">
+    <h1>HAAME Game Review</h1>
+    <p class="lead">The worlds leading website in all things game related</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Top News &raquo;</a></p>
+</div>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Genre</title>
+</head>
+<body>
+    <div class="">
+        <div class="col-md-4">
+            <h2>Action Games</h2>
+            <table class="">
+                <tr>
+                    <th>Game Title</th>
+                    <th></th>
+                    <th>Review</th>
+                    <th>Price</th>
+                    <th>Ratings</th>
+                </tr>
+                <tr>
+                    <td>
+                        Resident Evil 3
+                    </td>
+                    <td>
+                        <img src="~/Images/resident.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        So it looks like my pre-order of Resident Evil 3 was entirely justified. The demo is fantastic and I cannot wait until it’s out next month. Self-isolation is bad but thank god it happened now and not three months ago when there wasn’t so much as a new game in sight. I will be playing the hell out of Resident Evil 3 when it comes out and I’m hoping that the multiplayer will be good too, which I have not played yet, as that will help to keep me entertained too.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        GTA 5
+                    </td>
+                    <td>
+                        <img src="~/Images/gta.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        There has been a particular theory going round for the last year or so, that "box set" TV has replaced movies as the preferred form of mass, culturally meaningful entertainment. It is the likes of Breaking Bad, The Wire and Homeland that are telling us about modern life now, rather than Hollywood's simplified three-act confections. Grand Theft Auto V, however, hints at a future in which that role is taken by games – or at the very least actively sought by them. Unlike the vast swathe of wondrous entertainment the video game industry produces, this series cannot be safely pigeon-holed or ignored by non-players. For the last decade, Rockstar has wielded a sledgehammer over public perceptions of what video games are or can be; now it has struck with merciless force.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        9.8/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Modern Warfare
+                    </td>
+                    <td>
+                        <img src="~/Images/cod.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        In 2019’s Modern Warfare, a reimagining of Call of Duty 4: Modern Warfare from 2007, you take control of SAS and CIA operatives as they aid rebel forces in the fictitious country of Urzikstan, which borders Russia and is fighting for its independence. A stash of chemical weapons has gone missing and must be located while an extremist Russian military faction is quelled.
+
+                        The story is a pulpy, mashup of real-world proxy wars and brutal localised conflicts that panders to US sensibilities. Urzikstan could be Syria, it could be Afghanistan, it could be the Ukraine or Chechnya. It doesn’t matter. What matters is that hard men and women are putting their lives on the line in hidden, deniable ops where the rules are bent – and that can include the odd war crime.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        8.7/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Halo Infinite
+                    </td>
+                    <td>
+                        <img src="~/Images/halo.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Halo Infinite is going to be a pretty big deal. Few video game franchises form as big a part of Xbox's identity as Halo – and Microsoft knows it. When you think of Xbox, it's hard not to imagine the algae-green super soldier that is Master Chief and hours spent fending off the Flood.
+
+                        So it's no surprise that there's a massive new entry on the way for the series: Halo Infinite. Not only that, but the latest chapter in Master Chief's saga is set to release in late 2020 as a launch title for the next-generation Xbox Series X, while also landing on Xbox Game Pass the same day. What a time to be a Halo fan!
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        8.8/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Marvels Avengers
+                    </td>
+                    <td>
+                        <img src="~/Images/marvel.png" height="200" width="200" />
+                    </td>
+                    <td>
+                        The Avengers have recently harnessed a new technology that leads them to merge with S.H.I.E.L.D., the special law enforcement and counter-terrorism agency that tends to deal with superhuman threats. Tensions are high. However, the celebration is interrupted by the villain Taskmaster and his goons, who steal the new tech and are using it to wreak havoc on San Francisco and the Avengers themselves.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        6.2/10
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-md-4">
+            <h2>Sports Games</h2>
+            <table>
+                <tr>
+                    <th>Game Title</th>
+                    <th></th>
+                    <th>Review</th>
+                    <th>Price</th>
+                    <th>Ratings</th>
+                </tr>
+                <tr>
+                    <td>
+                        Fifa 20
+                    </td>
+                    <td>
+                        <img src="~/Images/fifa20.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Let's start with the good news. Pace is back. FIFA 19 had an annoying issue where decidedly average defenders would catch up with fast players. Even Chris Smalling could do it. No more. In FIFA 20, fast players really do feel fast. This is very much a good thing, in my book. So much of modern football is about pace and running in behind the defence, and so it is in FIFA 20. I find myself looking for that winger run pretty much every time I work the ball in midfield and, if I can get it to my winger, attacking the box. There's a real sense of immediacy to FIFA 20's gameplay, a staccato rhythm to play that rewards quickness of thought. Pass, pass, pass around the corner then bang! The likes of Mohamed Salah and Kylian Mbappe are devastating in FIFA 20 - as they are in real life.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        9.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Madden 2K20
+                    </td>
+                    <td>
+                        <img src="~/Images/madden.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        With every new Madden comes a new set of upgrades and disappointments, but Madden NFL 20’s balance is a bit more favorable than usual. Among the new features are a couple of key changes that underscore the difference between a typical player and a true NFL superstar in meaningful and exciting ways, making the moment-to-moment gameplay as strong as it’s been since the switch to Xbox One and PlayStation 4. On the other hand, it leaves Franchise mode without significant new features and microtransactions continue to be an issue with Madden Ultimate Team. So EA’s ongoing quest to satisfy the entire spectrum of casual, competitive, and sim fans is only partially successful, though more so than usual.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        UFC 3
+                    </td>
+                    <td>
+                        <img src="~/Images/ufc.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        UFC 3’s biggest change to its usually exciting fights is the complete reworking of its striking system. Previous games adopted a Fight Night-style approach of using parries and counters, which always felt a bit out of place in an MMA fight. In UFC 3 there are no parries, but that doesn’t mean there are no counters. You can now freely sway with the right stick to dodge and duck under punches and throw any punch or kick while moving – a combination that leads to a dynamic striking system that feels much closer to how actual fights in the UFC play out.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.2/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        NBA 2K20
+                    </td>
+                    <td>
+                        <img src="~/Images/NBA_2K20_cover.png" height="200" width="200" />
+                    </td>
+                    <td>
+                        The first thing I noticed about NBA 2K20 is that everything feels more intuitive. The learning curve is still immense, but learning the basics is now a lot smoother than it used to be. A redesigned “2KU”, NBA 2K20’s optional tutorial mode, is particularly helpful and doesn’t require more than an hour to get through. Thoughtfully, an on-screen controller mimics the movement of the desired skill, making it plenty easy to imitate. Once I successfully learned a skill, like eurostepping toward the basket, I could move on at whatever pace I felt comfortable. This allowed for the remastering of skills I forgot about since last year, and trying out some moves I hadn’t been able to pull off previously at all.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        9.1/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Rocket League
+                    </td>
+                    <td>
+                        <img src="~/Images/rocket.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+
+                        When I initially reviewed Rocket League on PlayStation 4 and PC in 2015, and Xbox One in 2016, I gave it an 8.0 for “Great.” Here’s what I said then:
+                        “Whether it’s online casual or ranked matches, no-pressure exhibitions, split-screen local co-op with up to four players, or an intense 36-week season mode, Rocket League is all about getting into the next throttle-pounding match as fast as possible. Unfortunately, servers are still struggling, which means your mileage may vary day-to-day when it comes to online features. But the silver lining is the mostly formidable AI can make even offline matches interesting and tense. The execution of this simple idea is so strong and so engaging that it keeps bringing me back, time and time again, for just one more match.”
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        6.9/10
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-md-4">
+            <h2>Role Playing Games</h2>
+            <table>
+                <tr>
+                    <th>Game Title</th>
+                    <th></th>
+                    <th></th>
+                    <th>Price</th>
+                    <th>Ratings</th>
+                </tr>
+                <tr>
+                    <td>
+                        The Withcher 3: Wild Hunt
+                    </td>
+                    <td>
+                        <img src="~/Images/witch.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+
+                        Unlike its predecessor, The Witcher 3: Wild Hunt doesn't exactly come screaming off the starting line. Compared to The Witcher 2, where you're immediately plunged headlong into a sexy story of intrigue and betrayal, this main quest can seem mundane, even perfunctory at times. But each time I stepped off the well-beaten path to blaze my own trail, it turned into a wild, open, exhilarating fantasy roleplaying experience, rife with opportunities to make use of its excellent combat. Even after over 100 hours with The Witcher 3, it still tempts me to press on – there’s so much more I want to learn, and hunt.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Divinity: Original Sin 2
+                    </td>
+                    <td>
+                        <img src="~/Images/div.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Playing Divinity: Original Sin 2 is uncannily like playing a tabletop RPG. The way that Larian’s sequel embraces player creativity immediately conjures up memories of days spent sitting around a table, asking the Dungeon Master if I can attempt the last stupid idea that floated into my head. And like a good DM, Original Sin 2 usually answers that question with “Yes, you can attempt it.”
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        South Park: The Stick of Truth
+                    </td>
+                    <td>
+                        <img src="~/Images/south.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        As the credits roll on South Park: The Stick of Truth, the big question isn't why Ubisoft would choose to censor certain scenes for tender European eyes, but how they censored it. This is a game that doesn't so much cross the line as utterly erase it in a blitzkrieg of piss, poop, farts, profanity and over-the-top violence. In the midst of such gleefully offensive mayhem, working out how far constitutes "too far" is an utterly pointless exercise.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Final Fantasy XII: The Zodiac Age
+                    </td>
+                    <td>
+                        <img src="~/Images/finalfantasy.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Final Fantasy XII’s refreshingly down-to-earth story focuses on the struggles of characters caught up in a web of politics and war, rather than a stereotypical cataclysmic “saving the universe” sort of JRPG adventure. The focus on the characters and their small but important roles in a larger struggle makes the various twists, betrayals, and triumphs of the story feel more impactful. It’s helped along by one of the best localizations ever, which makes reading reams of dialogue learning more about the world feel rewarding on its own. This is a game where I thoroughly enjoy talking to each and every NPC, which is especially impressive when you consider that a playthrough can range from 60 hours to over 100, depending on your pace.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Legend of Grimrock 2
+                    </td>
+                    <td>
+                        <img src="~/Images/legend.png" height="200" width="200" />
+                    </td>
+                    <td>
+                        Legend of Grimrock was the triumphant resurrection of a long-dead genre. Twenty years ago, first-person roleplaying games with real-time combat were the height of sophistication. I remember: I was there, playing them and having an amazing time. The question is whether this sequel can bring fresh creativity to grid-based dungeon crawling.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-md-4">
+            <h2>Adventure Games</h2>
+            <table>
+                <tr>
+                    <th>Game Title</th>
+                    <th></th>
+                    <th>Review</th>
+                    <th>Price</th>
+                    <th>Ratings</th>
+                </tr>
+                <tr>
+                    <td>
+                        Control
+                    </td>
+                    <td>
+                        <img src="~/Images/control.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Right now, we need all the escapism we can get, and that’s precisely what Control, the latest game from Finnish developer Remedy (of Max Payne, Alan Wake and, most recently, Quantum Break fame) delivers – to a deliciously over-the-top degree. An immaculately conceived paranormal fantasy, it is built on several premises which are so preposterous that the writers of The X-Files would surely have rejected them, it somehow manages to feel simultaneously believable and beyond bizarre.
+                    </td>
+                    <td>
+                        39.99
+                    </td>
+                    <td>
+                        6.8/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Star Wars Jedi: Fallen Order
+                    </td>
+                    <td>
+                        <img src="~/Images/star.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        You are Cal Kestis, a bland-faced scrapper with too-clean hair and an inexplicable love for ponchos. You are also probably the deadliest person in the universe. Though you spend your days cutting crashed Star Destroyers open for parts, within your cloak you hide the true star of Jedi: Fallen Order—a blue lightsaber that you will use to strike down hundreds of stormtroopers across the course of the game.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Luigi's Mansion 3
+                    </td>
+                    <td>
+                        <img src="~/Images/luigi.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        If spooky, cartoony, fun and charming action, full of puzzles and mystery is your cup of tea - drink no further! If you loved the first and second one, jump right in. If you didn't play those, go and play them, then jump right in. This is a perfectly balanced treat for any fan of the cutesy horror, that perhaps only Nintendo can deliver. An absolute joy of a game, you should not dare miss.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Link’s Awakening
+                    </td>
+                    <td>
+                        <img src="~/Images/link.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        As you go through the isle's various dungeons, you find out the key to getting off the island involves waking up the Wind Fish. On your adventure you will come across mini-games and extra features dotted around the island which provide a break from the usual gameplay.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Infamous second son
+                    </td>
+                    <td>
+                        <img src="~/Images/download.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Infamous: Second Son is, in many ways, a large step away from the comic-book roots of its predecessors. Don't misunderstand – Second Son is very much an open-world superhero action game first, and an excellent one at that. Its flashy powers look and feel great in battle, and that’s really what games like this are all about. But I didn't expect to enjoy the weightier, more realistic tone of the characters as much as I do. It’s a change that initially surprised me as fan of the franchise, but one that ultimately pays off. Despite failing to believably marry the player's moral choices with the protagonist's own sense of right and wrong, Second Son hits some big high notes in both character interaction, and most importantly, open-world gameplay.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-4">
+            <h2>Puzzle Games</h2>
+            <table>
+                <tr>
+                    <th>Game Title</th>
+                    <th></th>
+                    <th>Review</th>
+                    <th>Price</th>
+                    <th>Ratings</th>
+                </tr>
+                <tr>
+                    <td>
+                        Tetris Effect
+                    </td>
+                    <td>
+                        <img src="~/Images/tetris.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Timeless, immediately compelling and utterly without mercy, Tetris has always been a game about what isn't there - or rather a game about what isn't there yet. It's a game about the puzzle pieces you don't currently have, and all the stupid stuff you get up to before they arrive. Tetris - the way I play it anyway, forever awaiting that long block - is the story of how you got so hopelessly drunk to fight off pre-party nerves that, once the actual party had started, you had to go home early - and on the way home you fell down an open manhole and broke your ankle.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        The Last Guardian
+                    </td>
+                    <td>
+                        <img src="~/Images/last.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        This is the fairy tale opening of Fumito Ueda’s heavily anticipated game, 10 years in the making and only the forty-six year old Japanese director’s third major work. But then, of course, the first two – Ico and Shadow of Colossus – are legendary. Film director Guillermo del Toro once described them as the medium’s sole masterpieces; anticipation is accordingly high.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unravel
+                    </td>
+                    <td>
+                        <img src="~/Images/Unravel.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Yarny is adorable in all the ways I'd want — he's vulnerable and resilient and genuine, and Coldwood's ability to capture all of this without a single line of spoken dialogue is impressive. It's that characterization, through mannerism and animation, that does much of Unravel's heavy lifting. Without the occasional reminder of just how likable the little red yarn-man is, it would be difficult to recommend Unravel at all.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        The Witness
+                    </td>
+                    <td>
+                        <img src="~/Images/witness.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Seven years is a long time to speculate, but despite Jonathan Blow and his team at Thekla revealing few details about The Witness, expectations have remained high. After all, this is the creative force behind legendary platform adventure Braid, which was important not only for its role in the rise of independent games, but also for what it said about the expressive potential of the entire medium.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        LIMBO
+                    </td>
+                    <td>
+                        <img src="~/Images/limbo.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Video games are an art form made up of visuals, sound, and a mysterious little something we call gameplay. Limbo is the perfect example of these three crafts working together in harmony to create something astounding. With no text, no dialogue, and no explanation, it manages to communicate circumstance and causality to the player more simply than most games. This black-and-white 2D puzzle platformer is one of the best games you'll play this year on any platform.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-4">
+            <h2>Simulation Games</h2>
+            <table>
+                <tr>
+                    <th>Game Title</th>
+                    <th></th>
+                    <th>Review</th>
+                    <th>Price</th>
+                    <th>Ratings</th>
+                </tr>
+                <tr>
+                    <td>
+                        The Sims 4
+                    </td>
+                    <td>
+                        <img src="~/Images/sims.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        There's a blithe naivety to the way that life is presented in The Sims that is either comforting or a little disturbing depending on your mood. The series is softly apolitical in the way that a Barbie house is apolitical, and by that I mean that it isn't apolitical at all . The Sims is loaded with assumptions about the way that people function and about the way that success in life is gauged, but it feels churlish to point them out because it's all just a bit of fun, isn't it. The Sims is set in a world where buying things is always awesome and everybody is twenty-five until they're sixty. Regardless of environmental aesthetic, the series has always been functionally and fundamentally Californian.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bus Simulator
+                    </td>
+                    <td>
+                        <img src="~/Images/bus.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        In just about every city in the world, buses dutifully ferry citizens back and forth like blood being pumped around a circulatory system. They’re always there, always running, always reliable, if rarely on time. But when you don’t need one you don’t think about them at all. They’re just part of the scenery.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Farming Simulator 19
+                    </td>
+                    <td>
+                        <img src="~/Images/farm.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Over the years Farming Simulator has attracted a surprisingly large and varied fanbase. Whether it’s young children, curious non-gamers, or die-hards looking for that genuine simulation experience it can have an entrancing effect on them that others simply can’t wrap their head around.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        City Skylines
+                    </td>
+                    <td>
+                        <img src="~/Images/city.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        I ended up getting sucked in surprisingly quickly, and I can see myself spending a lot more time trying to build up my city. It’s essentially a game you can keep playing forever, after all. If the framerate can be improved at all and gyro + touchscreen controls can be added, then this will make for a truly stellar port. Nevertheless, it’s still a surprise that Cities has been brought to Switch at all, and it’s managed to be competent enough to be worth a try.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Train Sim World
+                    </td>
+                    <td>
+                        <img src="~/Images/train.jpg" height="200" width="200" />
+                    </td>
+                    <td>
+                        Coasting through the San Francisco Bay area in a muscular F40PH-2CAT diesel-electric locomotive, there's 750 long yards to go until you have to come to a stop at a platform. That shouldn't be too tricky, especially as you've had a lengthy stretch with little more to do than take in the view and prepare your thoughts. With the throttle already set to idle, momentum and the train's sheer weight are all that is propelling you forward. 750 yards might as well be 750 miles. All it takes is a steady movement with a single brake lever, and the giant vehicle you are commanding should glide to a standstill with perfect elegance.
+                    </td>
+                    <td>
+                        44.99
+                    </td>
+                    <td>
+                        7.9/10
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

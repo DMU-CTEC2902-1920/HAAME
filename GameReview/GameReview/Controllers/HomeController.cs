@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using GameReview.Controllers;
 
 namespace GameReview.Controllers
 {
@@ -24,6 +25,21 @@ namespace GameReview.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Genre()
+        {
+            return View();
+        }
+
+        public ActionResult Terms()
+        {
+            return View();
+        }
+
+        public ActionResult ComingSoon()
+        {
             return View();
         }
     }

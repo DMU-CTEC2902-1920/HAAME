@@ -3,11 +3,24 @@
 @{
     ViewBag.Title = "HAMME Game Review";
 }
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+</style>
 
 <div class="jumbotron">
     <h1>HAAME Game Review</h1>
     <p class="lead">The worlds leading website in all things game related</p>
-    <img src="~/Images/cartoon-controller-png.png" height="250" width="200" />
+    <img src="~/Images/cartoon-controller-png.png" height="200" width="200" />
 </div>
 
 <!DOCTYPE html>
@@ -19,18 +32,18 @@
 </head>
 <body>
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @*@Html.ActionLink("Create New", "Create")*@
     </p>
-    <table class="table">
+    <table>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.GameTitle)
+                Game Name
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Console)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.GameGenre)
+                Gnere
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Developer)
@@ -42,11 +55,11 @@
                 @Html.DisplayNameFor(model => model.Ratings)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ReleaseDate)
+                Release Date
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
+            @*<th>
+                Description
+            </th>*@
             <th></th>
         </tr>
 
@@ -74,13 +87,14 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.ReleaseDate)
                 </td>
-                <td>
+                @*<td>
                     @Html.DisplayFor(modelItem => item.Description)
-                </td>
+                </td>*@
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.GameID }) |
+                    @*@Html.ActionLink("Edit", "Edit", new { id = item.GameID }) |*@
                     @Html.ActionLink("Details", "Details", new { id = item.GameID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.GameID })
+                    @*@Html.ActionLink("Delete", "Delete", new { id = item.GameID })*@
+                    @Html.ActionLink("Create a Review", "Details", new { id = item.GameID })
                 </td>
             </tr>
         }
